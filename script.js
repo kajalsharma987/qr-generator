@@ -44,5 +44,15 @@ function generateQRCode() {
     colorLight: "#fff",
     colorDark: "#000",
   });
+  setTimeout(() => {
+    let canvas = document.querySelector('canvas');
+    if (canvas) {
+      let dataURL = canvas.toDataURL("image/png");
+      downloadBtn.setAttribute("href", dataURL);
+      downloadBtn.setAttribute("download", "QR_Code.png");
+    }
+  }, 100);
+}
+
 }
 
