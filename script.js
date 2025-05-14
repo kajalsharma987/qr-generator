@@ -1,6 +1,3 @@
-
-
-
 const qrText = document.getElementById('qr-text');
 const sizes = document.getElementById('sizes');
 const generateBtn = document.getElementById('generateBtn');
