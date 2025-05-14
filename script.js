@@ -16,6 +16,8 @@ sizes.addEventListener('change', (e) => {
 });
 
 downloadBtn.addEventListener('click', () => {
+    e.preventDefault();
+
   let img = document.querySelector('.qr-body img');
   if (img !== null) {
     let imgAtrr = img.getAttribute('src');
